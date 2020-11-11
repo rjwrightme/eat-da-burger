@@ -1,0 +1,36 @@
+<section class="header">
+  <img id="logo" src="/assets/images/burger-logo.svg" alt="eat da burger logo">
+</section>
+<section class="hero">
+  <h1>Place Your Order</h1>
+  <form class="burger-form">
+    <label for="ca">Burger Name:</label>
+    <input type="text" id="burger" name="name">
+    <button type="submit">
+      <div class='insider'></div>
+      Order
+    </button>
+  </form>
+</section>
+
+<h2>Cats that are not sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+  {{#unless sleepy}}
+  {{> cats/cat-block sleep=true}}
+  {{/unless}}
+  {{/each}}
+</ul>
+
+<h2>Cats that are sleepy!</h2>
+
+<ul>
+  {{#each cats}}
+  {{#if sleepy}}
+  {{> cats/cat-block sleep=false}}
+  {{/if}}
+  {{/each}}
+</ul>
+
+<h2>Add a Cat</h2>
