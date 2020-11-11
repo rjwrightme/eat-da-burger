@@ -13,24 +13,22 @@
   </form>
 </section>
 
-<h2>Cats that are not sleepy!</h2>
+<h2>Burger Hit List</h2>
 
 <ul>
-  {{#each cats}}
-  {{#unless sleepy}}
-  {{> cats/cat-block sleep=true}}
+  {{#each burgers}}
+  {{#unless devoured}}
+  {{> cats/burger-block devoured=true}}
   {{/unless}}
   {{/each}}
 </ul>
 
-<h2>Cats that are sleepy!</h2>
+<h2>Crimes Committed Against Burgers</h2>
 
 <ul>
-  {{#each cats}}
-  {{#if sleepy}}
-  {{> cats/cat-block sleep=false}}
+  {{#each burgers}}
+  {{#if devoured}}
+  {{> burgers/burger-block devoured=false}}
   {{/if}}
   {{/each}}
 </ul>
-
-<h2>Add a Cat</h2>
