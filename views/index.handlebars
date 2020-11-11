@@ -4,8 +4,8 @@
 <section class="hero">
   <h1>Place Your Order</h1>
   <form class="burger-form">
-    <label for="ca">Burger Name:</label>
-    <input type="text" id="burger" name="name">
+    <label for="burgerField">Burger Name:</label>
+    <input type="text" id="burgerField" name="burgerField">
     <button type="submit">
       <div class='insider'></div>
       Order
@@ -18,7 +18,7 @@
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> cats/burger-block devoured=true}}
+  {{> burgers/burger-block devoured=true}}
   {{/unless}}
   {{/each}}
 </ul>
