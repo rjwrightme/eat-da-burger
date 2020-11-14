@@ -13,17 +13,7 @@ This is a simple application that allows the user to place an order for a burger
 
 ## Site Link
 
-1. Clone this repo
-
-```sh
-git clone git@github.com:rjwrightme/CLI-README-generator.git
-```
-
-2. cd into the repo and run
-
-```sh
-npm install
-```
+You can view the app here: https://fathomless-scrubland-94840.herokuapp.com/
 
 ## License
 
